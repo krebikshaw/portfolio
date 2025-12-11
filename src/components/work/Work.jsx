@@ -10,7 +10,7 @@ const Work = () => (
       <div className="experience-item__content">
         <h3 className="experience-item__company">新芽網路 25sprout</h3>
         <p className="experience-item__role">Front-End Development Manager (Scope: FE / BE / App)</p>
-        <p className="experience-item__location">Taipei, Taiwan</p>
+        {/* <p className="experience-item__location">Taipei, Taiwan</p> */}
         <p className="experience-item__date">2025.01 – Present</p>
         <p className="experience-item__note">
           <span role="img" aria-label="note">📌</span> 2025.07 起職責擴展：基於卓越績效，管理範圍從前端團隊延伸至統籌整個 BU 的開發團隊 (FE / BE / App)。
@@ -42,7 +42,7 @@ const Work = () => (
       <div className="experience-item__content">
         <h3 className="experience-item__company">新芽網路 25sprout</h3>
         <p className="experience-item__role">Front-End Development Assistant Manager</p>
-        <p className="experience-item__location">Taipei, Taiwan</p>
+        {/* <p className="experience-item__location">Taipei, Taiwan</p> */}
         <p className="experience-item__date">2022.07 – 2024.12</p>
         <p className="experience-item__note">
           <span role="img" aria-label="note">📌</span> 從帶領績效最佳小組，晉升至整併管理整個前端團隊。
@@ -70,7 +70,7 @@ const Work = () => (
       <div className="experience-item__content">
         <h3 className="experience-item__company">新芽網路 25sprout</h3>
         <p className="experience-item__role">Front-End Developer (Squad Team)</p>
-        <p className="experience-item__location">Taipei, Taiwan</p>
+        {/* <p className="experience-item__location">Taipei, Taiwan</p> */}
         <p className="experience-item__date">2021.02 – 2022.06</p>
         <p className="experience-item__note">
           <span role="img" aria-label="note">📌</span> 核心開發成員，專注於新產品線從 0 到 1 的實作與驗證。

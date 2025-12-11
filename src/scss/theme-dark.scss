@@ -98,6 +98,31 @@
     }
   }
 
+  /* Sidebar Competencies */
+  .sidebar-competency {
+    border-bottom-color: #444;
+
+    &__header i {
+      color: lighten($main-color, 15%);
+    }
+
+    &__title {
+      color: #eee;
+    }
+
+    &__subtitle {
+      color: #888;
+    }
+
+    &__desc {
+      color: #aaa;
+
+      strong {
+        color: lighten($main-color, 20%);
+      }
+    }
+  }
+
   /* Endorsement */
   .endorsement {
     background: rgba(lighten($main-color, 10%), 0.1);

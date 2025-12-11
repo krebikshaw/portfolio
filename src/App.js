@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 
 import Introduce from './components/introduce/Introduce';
 import Sidebar from './components/sidebar/Sidebar';
-import Competencies from './components/competencies/Competencies';
 import Work from './components/work/Work';
 import About from './components/about/About';
 import { Switch } from 'antd';
@@ -38,7 +37,6 @@ class App extends Component {
             <Sidebar />
             <div className='resume-main'>
               <About />
-              <Competencies />
               <Work />
             </div>
           </div>
