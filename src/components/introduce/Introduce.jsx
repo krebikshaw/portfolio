@@ -2,18 +2,20 @@ import React from 'react';
 import ContactList from './../contactList/ContactList';
 
 const Introduce = () => (
-  <section className="section no-border no-margin">
-    <h1 className="name-title">YUXIANG SU</h1>
-    <section className="introduce">
-      <p><strong>嗨！ 我是 裕翔，一個還在自我精進的 Front-End Developer 🎅</strong></p>
-      <p>
-        Taipei <br />
-        在前端的世界中持續尋寶，透過規劃構思出藍圖，並藉由程式去建築自己的想法。<br />
-        參與 2020 程式導師計畫，從中獲取開啟前端大門的鑰匙
-        </p>
-    </section>
-    <ContactList />
-  </section>
+  <header className="resume-header">
+    <div className="resume-header__avatar">
+      <img 
+        src="https://github.com/krebikshaw/portfolio/blob/master/public/image/avatar.jpg?raw=true" 
+        alt="YuXiang Su"
+      />
+    </div>
+    <div className="resume-header__info">
+      <h1 className="resume-header__name">蘇裕翔 YuXiang Su</h1>
+      <p className="resume-header__title">Front-End Development Manager</p>
+      <p className="resume-header__subtitle">4 年內 3 次晉升｜管理 10+ 人跨職能團隊 (FE / BE / App)｜商業思維驅動技術決策</p>
+      <ContactList />
+    </div>
+  </header>
 );
 
 export default Introduce;

@@ -2,18 +2,22 @@ import React from 'react';
 
 const ContactList = () => (
   <div className="contact-info">
-    <p>
-      <i className="fas fa-paper-plane fa-lg"></i>
-      <a href="mailto:krebikshaw@gmail.com" target="_blank" rel="noopener noreferrer">krebikshaw@gmail.com</a>
-    </p>
-    <p>
-      <i className="fas fa-phone-alt fa-lg"></i>
-      <a href="tel:+996-911-277-811">+886 911 277 811</a>
-    </p>
-    <p className="resume">
-      <i className="far fa-file-alt fa-lg"></i>
-      <a href="./YuXiang_Profolio.pdf" download="YuXiang_Resume">resume (pdf)</a>
-    </p>
+    <span className="contact-item">
+      <i className="fas fa-map-marker-alt"></i>
+      Taipei, Taiwan
+    </span>
+    <span className="contact-item">
+      <i className="fas fa-phone-alt"></i>
+      <a href="tel:+886-911-277-811">+886 911 277 811</a>
+    </span>
+    <span className="contact-item">
+      <i className="fas fa-envelope"></i>
+      <a href="mailto:krebikshaw@gmail.com">krebikshaw@gmail.com</a>
+    </span>
+    <span className="contact-item">
+      <i className="fas fa-globe"></i>
+      <a href="https://www.linkedin.com/in/裕翔-蘇" target="_blank" rel="noopener noreferrer">Linkedin</a>
+    </span>
   </div>
 );
 

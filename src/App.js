@@ -1,14 +1,10 @@
 import React, { Component } from 'react';
 
 import Introduce from './components/introduce/Introduce';
-import Project from './components/project/Project';
+import Sidebar from './components/sidebar/Sidebar';
+import Competencies from './components/competencies/Competencies';
 import Work from './components/work/Work';
-import Education from './components/education/Education';
-import Footer from './components/footer/Footer';
-import Anchor from './components/anchor/Anchor';
-import Contact from './components/contact/Contact';
 import About from './components/about/About';
-import Skill from './components/skill/Skill';
 import { Switch } from 'antd';
 
 import 'antd/dist/antd.css';
@@ -27,24 +23,25 @@ class App extends Component {
 
   render() {
     const { isDarkTheme } = this.state;
-    document.body.style.backgroundColor = isDarkTheme ? '#333' : '#fff';
+    document.body.style.backgroundColor = isDarkTheme ? '#333' : '#f5f5f5';
     return (
       <div className={`wrapper ${isDarkTheme ? 'theme--dark' : ''}`}>
-        <main className='container'>
-          <Switch
-            checkedChildren='護眼'
-            unCheckedChildren='一般'
-            onChange={this.setTheme}
-            defaultChecked
-          />
+        <Switch
+          checkedChildren='護眼'
+          unCheckedChildren='一般'
+          onChange={this.setTheme}
+          defaultChecked
+        />
+        <main className='resume-container'>
           <Introduce />
-          <Anchor />
-          <Skill />
-          <Project />
-          <Work />
-          <Education />
-          <About />
-          <Contact />
+          <div className='resume-body'>
+            <Sidebar />
+            <div className='resume-main'>
+              <About />
+              <Competencies />
+              <Work />
+            </div>
+          </div>
         </main>
       </div>
     );

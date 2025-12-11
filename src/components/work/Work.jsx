@@ -1,45 +1,91 @@
 import React from 'react';
 
 const Work = () => (
-  <section id="work" className="section work">
-    <h4 className="section__title">WORK EXPERIENCE</h4>
-    <div className="section__content work__item">
-      <a className="title" href="https://github.com/Lidemy/mentor-program-4th" rel="noopener noreferrer" target="_blank">LIDEMY 第四期的程式導師計畫</a>
-      <p className="summary">
-        畢業生 <br />
-        Jun, 2020 – Dec, 2020<br />
-        參加 Lidemy 鋰學院創辦人 Huli 所開設的 <a href="https://github.com/Lidemy/mentor-program-4th" target="_blank">【 程式導師計畫第四期 】</a>，
-        認識與理解許多程式相關的思考方式及觀念，
-        並在跟課的這半年期間持續利用 Blog 紀錄學習軌跡，
-        完成一路以來的 <a href="https://mtr04-note.coderbridge.io/" rel="noopener noreferrer" target="_blank"> 程式學習紀錄。</a>
-        
-      </p>
-      <ul className="info">
-        <li>前端框架 ： React ( with Redux )</li>
-        <li>前端技術 ： 熟悉原生 JavaScript 語法特性、SCSS、知道 Ajax 以及如何與後端串接</li>
-        <li>後端技術 ： 搭配使用 Express 框架、PHP 基本的 CRUD 操作、開發 RESTFul API</li>
-        <li>資安防範 ： 了解如何預防 XSS、SQL Injection、CORS 的基本常識</li>
-        <li>基本部署 ： 具備部署 GitHub Page 及 AWS EC2 的經驗，並懂得如何應用 Nginx 作代理</li>
-        <li>現代網頁工程及優化 ： Webpack 打包工具、 gulp 任務管理、網頁載入優化</li>
-      </ul>
+  <section id="work" className="main-section work">
+    <h4 className="main-section__title">Experience</h4>
+    
+    {/* Position 1: FE Development Manager */}
+    <div className="experience-item">
+      <div className="experience-item__marker"></div>
+      <div className="experience-item__content">
+        <h3 className="experience-item__company">新芽網路 25sprout</h3>
+        <p className="experience-item__role">Front-End Development Manager (Scope: FE / BE / App)</p>
+        <p className="experience-item__location">Taipei, Taiwan</p>
+        <p className="experience-item__date">2025.01 – Present</p>
+        <p className="experience-item__note">
+          <span role="img" aria-label="note">📌</span> 2025.07 起職責擴展：基於卓越績效，管理範圍從前端團隊延伸至統籌整個 BU 的開發團隊 (FE / BE / App)。
+        </p>
+        <ul className="experience-item__list">
+          <li>
+            <strong>主導大型專案危機解除：</strong>
+            接手公司年度重點專案之危機處理，重新盤點 100+ 個 Issue 並重整開發優先級，<strong>於接手首週將 Critical Issues 收斂至可控範圍</strong>，成功挽回客戶信任並確保尾款順利驗收。
+          </li>
+          <li>
+            <strong>管理透明度與自動化：</strong>
+            解決跨團隊工時紀錄標準不一痛點，導入 n8n 自動化報表系統，讓 PM 能<strong>即時掌握開發量能與預算消耗</strong>，同時大幅減少工程師日報填寫時間。
+          </li>
+          <li>
+            <strong>決策優化與風險控管：</strong>
+            針對舊系統維護瓶頸，提出客觀的 ROI 分析報告，說服高層與客戶採納「以重構取代修補」策略，<strong>預計降低長期維運成本 30%</strong>。
+          </li>
+          <li>
+            <strong>OKR 目標落地：</strong>
+            落實「財務健康」與「團隊健康」平衡策略，成功達成 <strong>BU 全年淨利率 10%</strong> 目標，並透過資源調配<strong>降低團隊總加班時數 40%</strong>。
+          </li>
+        </ul>
+      </div>
     </div>
 
-    <div className="section__content work__item">
-      <h1 className="title" >正璽顧問有限公司</h1>
-      <p className="summary">
-        宏碁輔導工程師<br />
-        Sep, 2019 – Feb, 2020<br />
-        負責「司法院 - 線上起訴暨律師單一登入」及「司法院 - 第二代審判系統」之系統維護專案。
-        第一線協助「律師」與「司法院資訊處」處理系統方面問題，
-        指導資訊部人員使用系統並協助工程師處理問題，
-        在職期間不僅培養出對程式的興趣，也練就短時間理解客戶需求的軟實力，
-        並將客戶的需求與工程師進行溝通，間接推動系統的優化與修正。
-      </p>
-      <ul className="info">
-        <li>查看 log :  初步分析程式 bug，回覆工程師處理</li>
-        <li>釐清資料問題 :  利用 sql 查詢資料庫，確認資料內容並分析問題</li>
-        <li>製作文件模板 :  利用「漢書文書處理系統」製作客戶所需之文件模板</li>
-      </ul>
+    {/* Position 2: Assistant Manager */}
+    <div className="experience-item">
+      <div className="experience-item__marker"></div>
+      <div className="experience-item__content">
+        <h3 className="experience-item__company">新芽網路 25sprout</h3>
+        <p className="experience-item__role">Front-End Development Assistant Manager</p>
+        <p className="experience-item__location">Taipei, Taiwan</p>
+        <p className="experience-item__date">2022.07 – 2024.12</p>
+        <p className="experience-item__note">
+          <span role="img" aria-label="note">📌</span> 從帶領績效最佳小組，晉升至整併管理整個前端團隊。
+        </p>
+        <ul className="experience-item__list">
+          <li>
+            <strong>人才培育體系建立：</strong>
+            建立系統化 Onboarding 流程 (技術白皮書 + Component Workshop)，<strong>縮短新人上手時間 50%</strong>。
+          </li>
+          <li>
+            <strong>跨部門協作標準化：</strong>
+            與 PM 及設計部門建立標準協作規範 (SOP)，導入回饋機制，有效減少規格來回確認的溝通成本。
+          </li>
+          <li>
+            <strong>營運支援與獲利目標：</strong>
+            在公司擴張期彈性調度人力，成功支援跨公司合作案並促成<strong>合約續約</strong>。
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    {/* Position 3: Developer */}
+    <div className="experience-item">
+      <div className="experience-item__marker"></div>
+      <div className="experience-item__content">
+        <h3 className="experience-item__company">新芽網路 25sprout</h3>
+        <p className="experience-item__role">Front-End Developer (Squad Team)</p>
+        <p className="experience-item__location">Taipei, Taiwan</p>
+        <p className="experience-item__date">2021.02 – 2022.06</p>
+        <p className="experience-item__note">
+          <span role="img" aria-label="note">📌</span> 核心開發成員，專注於新產品線從 0 到 1 的實作與驗證。
+        </p>
+        <ul className="experience-item__list">
+          <li>
+            <strong>企業級產品架構建置：</strong>
+            主導前後端分離架構，建立高複用性模組 (Modules)，加速後續產品線開發效率。
+          </li>
+          <li>
+            <strong>Design System 維護：</strong>
+            建立 UI 元件庫，確保跨產品線體驗一致性。
+          </li>
+        </ul>
+      </div>
     </div>
   </section>
 );
