@@ -5,7 +5,7 @@ const Introduce = () => (
   <header className="resume-header">
     <div className="resume-header__avatar">
       <img 
-        src="https://github.com/krebikshaw/portfolio/blob/master/public/image/avatar.jpg?raw=true" 
+        src="https://github.com/krebikshaw/portfolio/blob/master/public/image/avatar_new.jpg?raw=true" 
         alt="YuXiang Su"
       />
     </div>
